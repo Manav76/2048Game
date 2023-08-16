@@ -94,6 +94,8 @@ class Cell {
   canAccept(tile) {
     return (
       this.tile == null ||
+      //check if the tile is empty and both have same value thats how game works
+      
       (this.mergeTile == null && this.tile.value === tile.value)
     )
   }
